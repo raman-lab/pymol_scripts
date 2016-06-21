@@ -1,0 +1,18 @@
+Enter cleaned and relaxed pdb: 4AC0.pdb
+
+Enter name of ligand: Chrys
+
+Number of atoms to align (3 to 6): 3
+
+Number of random pairings per conformer: 2
+
+# Comments:
+# Have this file, conformer files, and protein pdb file in working directory
+# Run the in bash shell: pymol -qc (path)/pairFitRand.py -- thisFile.txt
+# A pdb will be generated for each conformer in each pairing 
+# Output will be of the form: (pdb)_(ligand)_rdm_P(pair number)_C(conformer number).pdb
+# All conformers must be of the form: (ligand)_Conf(number).pdb
+# Must have spaces after colons and commas
+
+ 
+

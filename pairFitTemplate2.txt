@@ -1,0 +1,25 @@
+Enter cleaned and relaxed pdb: 4AC0.pdb
+
+Enter name of ligand: Chrys
+
+Which ligand atoms are kept constant (pdbAtoms or ligAtoms): pdbAtoms
+
+Is there a specific area (i.e. Pocket) being aligned (enter No if not): A0
+
+Please list atoms kept constant: C2, C10, C13
+
+Please list atoms for each pairing:
+	Pairing 0: C9, C6, C5
+	Pairing 1: C14, C6, C5
+	Pairing 2: C11, C5, C6
+	Pairing 3: C3, C5, C6
+
+# READ ME:
+# Have this file, conformer files, and protein pdb file in working directory
+# Run the in bash shell: pymol -qc (path)/pairFitTextIn.py -- thisFile.txt
+# A pdb will be generated for each conformer in each pairing 
+# Output will be of the form: (pdb)_(lig)_A(alignment number)_P(pair number)_C(conformer number).pdb
+# All conformers must be of the form: (ligand)_Conf(number).pdb
+# All aligned areas are stored as indices (i.e. A0,A1,…,An), so please make note of what Ai corresponds to below
+	# i.e. A0 = Poc
+# Must have spaces after colons and commas
